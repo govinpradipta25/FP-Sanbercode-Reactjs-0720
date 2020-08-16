@@ -1,0 +1,195 @@
+
+body {
+  color: black;
+  background-color: white;
+  display: block;
+  font-size: 10px;
+  font-style: sans-serif;
+}
+
+.content {
+
+  padding-right: 20px;
+  padding-top: 60px;
+  padding-left: 50px;
+  float: right;
+  width: 80%;
+}
+.content-header {
+  border: 1px solid;
+}
+header {
+  display: flex;
+  background-color: #453737;
+  box-sizing: border-box;
+  justify-content: space-between;
+  padding:  20px;
+  align-items: center;
+  height: 65px;
+}
+.logo {
+  width: 100px;
+  padding-left: 18px;
+}
+
+nav {
+  align-items: center;
+  position: sticky;
+  width: 50%;
+}
+
+header nav ul {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+  align-items: center;
+}
+
+.link {
+  text-decoration: none;
+  color: rgb(170, 187, 174);
+}
+.detail {
+  text-decoration: none;
+  color: rgb(170, 187, 174);
+}
+.detail:hover {
+  color: white;
+}
+header nav ul li {
+  text-align: center;
+  text-decoration: none;
+  font-size: 14px;
+  width: 200px;
+  vertical-align: middle;
+}
+header nav ul li:hover {
+  transition-duration: 0.1s;
+  font-size: 14px;
+  color: white;
+  cursor: pointer;
+}
+.link:hover {
+  transition-duration: 0.1s;
+  font-size: 22px;
+  color: white;
+  cursor: pointer;
+}
+
+.loginForm {
+  margin: 0 auto;
+}
+
+.makeAccount {
+  padding-top: 100px;
+}
+
+.Content {
+  /* overflow-y: scroll; */
+  align-content: center;
+ /* box-sizing: border-box;*/
+  margin-top: 30px;
+  padding: 20px;
+  border-right: 1px solid white;
+  float: left;
+  width: 20%;
+  height: 100%;
+}
+.content_table {
+   border: 3px solid black;
+}
+
+.changePassword {
+  margin-top: 100px;
+}
+.tableData {
+  margin-top: 85px;
+}
+
+.footer {
+  float: left;
+  margin-top: 40px;
+  padding-top: 20px;
+  padding-bottom: 10px;
+  width: 100%;
+  text-align: center;
+  color: white;
+  background-color: #453737;
+  
+  
+}
+
+.buttonFilter {
+  float: right;
+  margin-bottom: 30px;
+}
+
+@media only screen and (max-width: 800px) {
+  .Sidebar {
+    border: 0;
+    float: none;
+    width: 100%;
+  }
+  .content {
+    box-sizing: border-box;
+    float: none;
+    width: 100%;
+  }
+  .Sidebar img {
+    float: left;
+  }
+  .Sidebar p {
+    width: 70%;
+    float: right;
+  }
+}
+@media only screen and (max-width: 576px) {
+  .Sidebar p {
+    width: 60%;
+  }
+  .Sidebar {
+    border: 0;
+  }
+  nav {
+    width: 60%;
+  }
+  header nav ul li {
+    text-align: center;
+    text-decoration: none;
+    font-size: 14px;
+    width: 50px;
+    vertical-align: middle;
+  }
+}
+
+.card {
+  margin-top: 20px;
+  border-bottom: 1px solid;
+}
+
+.card img {
+  width: 40%;
+}
+.card .judul {
+  padding: 20px;
+  justify-content: space-between;
+  display: flex;
+  text-decoration: none;
+}
+.content h1 {
+  /* float: left;
+  
+  
+  */
+}
+.addMovie {
+  margin-top: 23px;
+  float: right;
+}
+
+/*about*/
+table {
+ 
+
+}
