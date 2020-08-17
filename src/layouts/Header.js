@@ -67,7 +67,7 @@ const Header = () => {
           </ul>
         </nav>
       </header>
-      {user && <h1 style={{ marginLeft: "500px" }}>Hallo, {user.username}</h1>}
+      {user && <h1 style={{ marginLeft: "500px" }}>hei admin : {user.username}</h1>}
       <Switch>
         <Route exact path="/about" component={About} />
         <Route exact path="/movies" component={Movies} />

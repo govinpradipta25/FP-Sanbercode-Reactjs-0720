@@ -27,36 +27,6 @@ header {
   align-items: center;
   height: 65px;
 }
-.logo {
-  width: 100px;
-  padding-left: 18px;
-}
-
-nav {
-  align-items: center;
-  position: sticky;
-  width: 50%;
-}
-
-header nav ul {
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  list-style-type: none;
-  align-items: center;
-}
-
-.link {
-  text-decoration: none;
-  color: rgb(170, 187, 174);
-}
-.detail {
-  text-decoration: none;
-  color: rgb(170, 187, 174);
-}
-.detail:hover {
-  color: white;
-}
 header nav ul li {
   text-align: center;
   text-decoration: none;
@@ -70,11 +40,40 @@ header nav ul li:hover {
   color: white;
   cursor: pointer;
 }
+header nav ul {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+  align-items: center;
+}
+.logo {
+  width: 100px;
+  padding-left: 18px;
+}
+
+nav {
+  align-items: center;
+  position: sticky;
+  width: 50%;
+}
+
+.link {
+  text-decoration: none;
+  color: rgb(170, 187, 174);
+}
 .link:hover {
   transition-duration: 0.1s;
   font-size: 22px;
   color: white;
   cursor: pointer;
+}
+.detail {
+  text-decoration: none;
+  color: rgb(170, 187, 174);
+}
+.detail:hover {
+  color: white;
 }
 
 .loginForm {
@@ -86,9 +85,7 @@ header nav ul li:hover {
 }
 
 .Content {
-  /* overflow-y: scroll; */
   align-content: center;
- /* box-sizing: border-box;*/
   margin-top: 30px;
   padding: 20px;
   border-right: 1px solid white;
@@ -101,7 +98,8 @@ header nav ul li:hover {
 }
 
 .changePassword {
-  margin-top: 100px;
+  margin-top: 30px;
+  
 }
 .tableData {
   margin-top: 85px;
@@ -177,15 +175,16 @@ header nav ul li:hover {
   display: flex;
   text-decoration: none;
 }
-.content h1 {
-  /* float: left;
-  
-  
-  */
-}
+
+/*edit*/
 .addMovie {
-  margin-top: 23px;
-  float: right;
+  margin-top: 10px;
+  margin-right: 750px;
+  float: right ;
+}
+.buttonFilter {
+  margin-top: 200px;
+  float: left ;
 }
 
 /*about*/

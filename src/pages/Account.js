@@ -76,27 +76,23 @@ const Account = () => {
           setAccount(res.data);
         });
 
-      alert("Your password is successfully changed!");
+      alert(" password is successfully changed ");
     } else {
-      alert("Your old password is wrong!");
+      alert(" old password is wrong ");
     }
     setInput({ ...input, oldPassword: "", newPassword: "" });
   };
   const classes = useStyles();
   return (
     <div className="content">
-      <h1>Account Page</h1>
-      <h2>Your Username: {account.username}</h2>
-      {/* <h2>Your Password: {account.password}</h2>
-      <h2>Your ID: {account.id}</h2> */}
       <div className="changePassword">
-        <h2>Change Password:</h2>
+        <h2>Change Password :</h2>
         <form
           className="loginForm"
           className={classes.root}
           onSubmit={handleChangePassword}
         >
-          <label>Old Password: </label>
+          <label>Old Password : </label>
           <TextField
             InputLabelProps={{
               className: classes.floatingLabelFocusStyle,
@@ -104,16 +100,16 @@ const Account = () => {
             InputProps={{
               className: classes.input,
             }}
-            color="white"
+            
             variant="outlined"
-            label="Old Password"
+            label="password lama"
             type="text"
             name="oldPassword"
             onChange={handleChange}
             value={input.oldPassword}
           />
           <br />
-          <label>New Password: </label>
+          <label>New Password : </label>
           <TextField
             InputLabelProps={{
               className: classes.floatingLabelFocusStyle,
@@ -122,7 +118,7 @@ const Account = () => {
               className: classes.input,
             }}
             variant="outlined"
-            label="New Password"
+            label="password lama"
             type="password"
             name="newPassword"
             onChange={handleChange}

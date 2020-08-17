@@ -266,6 +266,7 @@ const Edit = () => {
   const handleSubmitMovie = (event) => {
     event.preventDefault();
     let date = new Date().toLocaleString();
+
     if (selectedId === -1) {
       axios
         .post(`https://backendexample.sanbersy.com/api/movies`, {
@@ -294,7 +295,7 @@ const Edit = () => {
             },
           ]);
         });
-      alert("Movie added!");
+      alert("Success added Movie !!");
     } else {
       axios
         .put(`http://backendexample.sanbercloud.com/api/movies/${selectedId}`, {
@@ -318,7 +319,7 @@ const Edit = () => {
           dataMovie.image_url = input.image_url;
           setMovies([...movies]);
         });
-      alert("Movie updated!");
+      alert("Success Update Movie !!");
     }
     setSelectedId(-1);
     setInput({
@@ -363,7 +364,7 @@ const Edit = () => {
           ]);
         });
 
-      alert("Game added!");
+      alert("Success Added Game !!");
     } else {
       axios
         .put(`http://backendexample.sanbercloud.com/api/games/${selectedId}`, {
@@ -385,7 +386,7 @@ const Edit = () => {
           dataGame.release = input.release;
           setGames([...games]);
         });
-      alert("Game updated!");
+      alert("Success Update Game !!");
     }
     setInput({
       ...input,
@@ -531,18 +532,20 @@ const Edit = () => {
     <>
       {user === null && (
         <div className="content">
-          <h1>You need to Login First</h1>
+          <h1>Please Login</h1>
         </div>
       )}
       {user && (
         <div className="content">
+        <h1>Movies Table</h1>
           <div className="addMovie">
-            <Button
+            <Button              
+              onClick={handleClickOpenMovie}
               variant="contained"
               color="secondary"
-              onClick={handleClickOpenMovie}
               endIcon={<AddIcon />}
             >
+
               Add Movie
             </Button>
             <Dialog
@@ -633,12 +636,9 @@ const Edit = () => {
               </DialogActions>
             </Dialog>
           </div>
-          <h1>Movies Table</h1>
-          <Button
-            variant="contained"
-            className="buttonFilter"
-            onClick={handleClickOpenFilterMovie}
-            endIcon={<FilterListIcon />}
+          
+          <Button className="buttonFilter" variant="contained" onClick={handleClickOpenFilterMovie}
+ endIcon={<FilterListIcon />}
           >
             Filter
           </Button>
@@ -727,7 +727,7 @@ const Edit = () => {
                           value={el.id}
                           onClick={handleEditMovie}
                         >
-                          Edit
+                          Edit Movie
                         </Button>
                         <Button
                           className={classes.button}
@@ -737,7 +737,7 @@ const Edit = () => {
                           value={el.id}
                           onClick={handleDeleteMovie}
                         >
-                          Delete
+                          Delete Movie
                         </Button>
                       </TableCell>
                       <TableCell component="th" scope="row">
@@ -754,6 +754,7 @@ const Edit = () => {
               </TableBody>
             </Table>
           </TableContainer>
+          <h1>Games Table</h1>
           <div className="addMovie">
             <Button
               variant="contained"
@@ -842,8 +843,7 @@ const Edit = () => {
                 </Button>
               </DialogActions>
             </Dialog>
-          </div>
-          <h1>Games Table</h1>
+          </div>          
           <Button
             variant="contained"
             className="buttonFilter"
@@ -936,7 +936,7 @@ const Edit = () => {
                           value={el.id}
                           onClick={handleEditGame}
                         >
-                          Edit
+                          Edit Game
                         </Button>
                         <Button
                           className={classes.button}
@@ -946,7 +946,7 @@ const Edit = () => {
                           value={el.id}
                           onClick={handleDeleteGame}
                         >
-                          Delete
+                          Delete Game
                         </Button>
                       </TableCell>
                       <TableCell component="th" scope="row">
